@@ -1,12 +1,12 @@
-# run this from /vagrant using "source setup.sh"
+# run this from /home/vagrant/kmax using "source setup.sh"
 
-sudo apt install git python-setuptools python-dev swig g++
+sudo apt-get install git python-setuptools python-dev swig g++ -y
 
 if [ ! -d pylockfile ]; then
   git clone https://github.com/openstack/pylockfile
   cd pylockfile
   git checkout 99870bfa02f1ba490da6a59b1499f0f1578c9825
-  sudo apt install git python-setuptools
+  python setup.py install --user
   cd ..
 fi
 
@@ -32,12 +32,11 @@ if [ ! -d pycudd2.0.2 ]; then
   cd ../..
 fi
 
-if [ ! -d kmax ]; then
-  git clone https://github.com/paulgazz/kmax.git
-  cd kmax/kconfig
-  make
-  cd ../kbuild
-  make
-fi
+cd kmax/kconfig
+make
+cd ../kbuild
+make
+cd ../..
 
+mkdir -p scratch data
 source env.sh

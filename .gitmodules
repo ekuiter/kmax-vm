@@ -1,0 +1,3 @@
+[submodule "kmax/kmax"]
+	path = kmax/kmax
+	url = git@github.com:paulgazz/kmax-dev.git
