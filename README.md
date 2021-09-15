@@ -9,6 +9,12 @@ are included.
 
 ## Getting Started
 
+Clone recursively:
+
+```
+git clone --recurse-submodules git@github.com:ekuiter/kmax-vm.git
+```
+
 Install [Vagrant](https://www.vagrantup.com/).
 
 Run `vagrant up` inside this repository. This will also prompt you to install the
