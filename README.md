@@ -1,5 +1,7 @@
 # Kmax VM
 
+**This project is deprecated. Installing Kmax is now much easier, have a look at the [original repository](https://github.com/paulgazz/kmax). For automated usage of Kmax/Kclause inside a virtual machine, have a look at our [feature model repository](https://github.com/ekuiter/feature-model-repository).**
+
 This repository provides a virtual machine running
 [Kmax](https://github.com/paulgazz/kmax), a tool for deducing presence
 conditions and more from the KConfig language and KBuild build system.
